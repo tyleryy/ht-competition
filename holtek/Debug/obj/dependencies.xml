@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder\holtek_1\stream_parser /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1\datalink /I..\..\..\..\..\works\coide_folder\holtek_1\init /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="15b57d1ecf0">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\usart\usart.h" lastModified="15b66d13cfe">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="15b57d1f0fb">
+      </source>
+      <source file="..\..\..\usart\usart.c" lastModified="15b6720f3ce">
+         <include file="..\..\..\usart\usart.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\playvoice\playvoice.c" lastModified="15b66dd7fff">
+         <include file="..\..\..\playvoice\playvoice.h"/>
+         <include file="..\..\..\usart\usart.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stream_parser\StreamParser.h" lastModified="15b67751f2f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="15b57d1ecff">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stdio\printf.c" lastModified="15b66fd78f5">
+         <include file="..\..\..\usart\usart.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stream_parser\StreamParser.c" lastModified="15b67766ad0">
+         <include file="..\..\..\stream_parser\StreamParser.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\datalink\datalink.h" lastModified="15b671cfbdc">
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="15b57d1f0e7">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\main.c" lastModified="15b66efaf3a">
+         <include file="..\..\..\usart\usart.h"/>
+         <include file="..\..\..\playvoice\playvoice.h"/>
+         <include file="..\..\..\init\init.h"/>
+      </source>
+      <source file="..\..\..\datalink\datalink.c" lastModified="15b671d8834">
+         <include file="..\..\..\stream_parser\StreamParser.h"/>
+      </source>
+      <source file="..\..\..\init\init.h" lastModified="15b66d2e0d4">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\init\init.c" lastModified="15b671835b0">
+         <include file="..\..\..\init\init.h"/>
+         <include file="..\..\..\usart\usart.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+         <include file="..\..\..\datalink\datalink.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder\holtek_1\stream_parser /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1\init /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\usart\usart.h" lastModified="15b66d13cfe">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\playvoice\playvoice.c" lastModified="15b66dd7fff">
+         <include file="..\..\..\playvoice\playvoice.h"/>
+         <include file="..\..\..\usart\usart.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\main.c" lastModified="15b66efaf3a">
+         <include file="..\..\..\usart\usart.h"/>
+         <include file="..\..\..\playvoice\playvoice.h"/>
+         <include file="..\..\..\init\init.h"/>
+      </source>
+      <source file="..\..\..\init\init.h" lastModified="15b66d2e0d4">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1\init /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\usart\usart.h" lastModified="15b66d13cfe">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\playvoice\playvoice.c" lastModified="15b66dd7fff">
+         <include file="..\..\..\playvoice\playvoice.h"/>
+         <include file="..\..\..\usart\usart.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\init\init.h" lastModified="15b66d2e0d4">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\nvic /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1\init /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\usart\usart.h" lastModified="15b66d13cfe">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\nvic\nvic.h" lastModified="15b66cc6a9c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\nvic\nvic.c" lastModified="15b66cbd305">
+         <include file="..\..\..\nvic\nvic.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/I..\..\..\..\..\works\coide_folder\holtek_1\playvoice /I..\..\..\..\..\works\coide_folder\holtek_1\nvic /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc /I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib /I..\..\..\..\..\works\coide_folder /I..\..\..\..\..\works\coide_folder\holtek_1 /I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot /I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8">
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="15b57dd63b4">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\playvoice\playvoice.h" lastModified="15b61e1c351">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="15b57d1e92d">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="15b57d1e8e8">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="15b57d1e908">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="15b57d1f509">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="15b57d1e8b3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+   </includePath>
+</dependencies>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=holtek.map -O3 --gc-sections -LD:\Applications\CoIDE\configuration\ProgramData\holtek -TD:\Applications\CoIDE\configuration\ProgramData\holtek/arm-gcc-link.ld -g">
+      <target file="holtek.elf" lastModified="15b677678c3">
+         <source file="..\obj\system_stm32f10x.o" lastModified="15b67144be2"/>
+         <source file="..\obj\startup_stm32f10x_hd.o" lastModified="15b67144c27"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="15b67144cd0"/>
+         <source file="..\obj\main.o" lastModified="15b67144d23"/>
+         <source file="..\obj\init.o" lastModified="15b671cfe28"/>
+         <source file="..\obj\playvoice.o" lastModified="15b67144dc3"/>
+         <source file="..\obj\printf.o" lastModified="15b67144f23"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="15b67144fe0"/>
+         <source file="..\obj\StreamParser.o" lastModified="15b6776693d"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="15b67145137"/>
+         <source file="..\obj\datalink.o" lastModified="15b67756495"/>
+         <source file="..\obj\misc.o" lastModified="15b671451d9"/>
+         <source file="..\obj\usart.o" lastModified="15b6720f26b"/>
+      </target>
+   </processor>
+</history>

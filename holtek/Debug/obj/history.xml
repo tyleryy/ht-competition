@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc 6.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O3 -c -DSTM32F103RC -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\works\coide_folder\holtek_1\playvoice -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib -I..\..\..\..\..\works\coide_folder\holtek_1\stream_parser -I..\..\..\..\..\works\coide_folder -I..\..\..\..\..\works\coide_folder\holtek_1\datalink -I..\..\..\..\..\works\coide_folder\holtek_1\init -I..\..\..\..\..\works\coide_folder\holtek_1 -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot -I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <target file="startup_stm32f10x_hd.o" lastModified="15b67144c27">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_hd.c" lastModified="15b57d1e8f8"/>
+      </target>
+      <target file="StreamParser.o" lastModified="15b6776693d">
+         <source file="..\..\..\stream_parser\StreamParser.c" lastModified="15b677666e8"/>
+      </target>
+      <target file="printf.o" lastModified="15b67144f23">
+         <source file="..\..\..\stdio\printf.c" lastModified="15b66fd7125"/>
+      </target>
+      <target file="datalink.o" lastModified="15b67756495">
+         <source file="..\..\..\datalink\datalink.c" lastModified="15b671d8834"/>
+      </target>
+      <target file="system_stm32f10x.o" lastModified="15b67144be2">
+         <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="15b57d1e908"/>
+      </target>
+      <target file="playvoice.o" lastModified="15b67144dc3">
+         <source file="..\..\..\playvoice\playvoice.c" lastModified="15b66dd7fff"/>
+      </target>
+      <target file="init.o" lastModified="15b671cfe28">
+         <source file="..\..\..\init\init.c" lastModified="15b671835b0"/>
+      </target>
+      <target file="main.o" lastModified="15b67144d23">
+         <source file="..\..\..\main.c" lastModified="15b66efaf3a"/>
+      </target>
+      <target file="stm32f10x_gpio.o" lastModified="15b67144cd0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="15b57d1e92d"/>
+      </target>
+      <target file="stm32f10x_usart.o" lastModified="15b67145137">
+         <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="15b57d1e8c5"/>
+      </target>
+      <target file="stm32f10x_rcc.o" lastModified="15b67144fe0">
+         <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="15b57d1e8f8"/>
+      </target>
+      <target file="usart.o" lastModified="15b6720f26b">
+         <source file="..\..\..\usart\usart.c" lastModified="15b6720ebfe"/>
+      </target>
+      <target file="misc.o" lastModified="15b671451d9">
+         <source file="..\..\..\stm_lib\src\misc.c" lastModified="15b57d1f509"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc 6.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O3 -c -DSTM32F103RC -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\works\coide_folder\holtek_1\playvoice -I..\..\..\..\..\works\coide_folder\holtek_1\nvic -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib -I..\..\..\..\..\works\coide_folder -I..\..\..\..\..\works\coide_folder\holtek_1\init -I..\..\..\..\..\works\coide_folder\holtek_1 -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot -I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <target file="nvic.o" lastModified="15b66d143bc">
+         <source file="..\..\..\nvic\nvic.c" lastModified="15b66cbd305"/>
+      </target>
+   </processor>
+   <processor signature="arm-none-eabi-gcc 6.1.0 x86_64-w64-mingw32 -mcpu=cortex-m3 -mthumb -Wall -ffunction-sections -g -O3 -c -DSTM32F103RC -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib\inc -I..\..\..\..\..\works\coide_folder\holtek_1\stm_lib -I..\..\..\..\..\works\coide_folder -I..\..\..\..\..\works\coide_folder\holtek_1 -I..\..\..\..\..\works\coide_folder\holtek_1\cmsis_boot -I..\..\..\..\..\works\coide_folder\holtek_1\usart">
+      <target file="bsp_usart1.o" lastModified="15b580a4e95">
+         <source file="..\..\..\usart\bsp_usart1.c" lastModified="15b580627e4"/>
+      </target>
+   </processor>
+</history>
