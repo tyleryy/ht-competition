@@ -10,5 +10,5 @@ typedef enum
 } data_t;
 void initialise_think_data(void);
 s16 get_data(data_t data);
-u8 send_value(u8 val1, u8 val2);
+void send_value(u8 val1, u8 val2);
 #endif

@@ -64,7 +64,7 @@ s16 get_data(data_t data)
 	}
 }
 
-u8 send_value(u8 val1, u8 val2)
+void send_value(u8 val1, u8 val2)
 {
 	u8 data_buff[] =
 	{ 0xaa, 0xaa, 0, 0, 0xaf };
