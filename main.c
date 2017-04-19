@@ -4,6 +4,7 @@
 #include "datalink/datalink.h"
 #include "stdio.h"
 #include "schedule/schedule.h"
+#include "adc/adc.h"
 
 #define MAINDEBUG
 
@@ -17,12 +18,12 @@ int main(void)
 {
 	initialise_board();
 	s16 signal1 = 0, signal2 = 0, attention1 = 0, attention2 = 0;
-	u16 i = 0, j = 0;
+	float distance;
 
 	main_debug("start");
 	while (1)
 	{
-		if (should_task_run(MAIN_TASK))
+		if (should_task_run(MAIN_LOOP))
 		{
 			signal1 = get_data(SIGNAL1);
 			signal2 = get_data(SIGNAL2);
@@ -43,7 +44,13 @@ int main(void)
 			main_debug(
 					"signal1:<%d>signal2:<%d>attention1:<%d>attention2:<%d>\n",
 					signal1, signal2, attention1, attention2);
+
 		}
+		if(should_task_run(ADC_LOOP))
+		{
+			main_debug("adc:%d \n",get_distance());
+		}
+
 
 	}
 }

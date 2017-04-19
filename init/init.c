@@ -4,6 +4,7 @@
 #include "misc.h"
 #include "datalink/datalink.h"
 #include "systick/systick.h"
+#include "adc/adc.h"
 
 void initialise_board()
 {
@@ -16,6 +17,8 @@ void initialise_board()
 	initialise_usart3(57600); /**<use for bluetooth*/
 	initialise_uart4(115200); /**<use for telecommute*/
 	initialise_uart5(115200);
+
+	initialise_adc();
 	initialise_systick();
 	initialise_think_data();
 

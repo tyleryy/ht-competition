@@ -13,7 +13,7 @@ extern "C"
 
 typedef enum
 {
-	MAIN_TASK, LED_TASK
+	MAIN_LOOP, LED_LOOP, ADC_LOOP
 } task_t;
 
 s8 should_task_run(task_t task);
