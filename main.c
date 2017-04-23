@@ -5,8 +5,11 @@
 #include "stdio.h"
 #include "schedule/schedule.h"
 #include "adc/adc.h"
+#include "ano_protocol.h"
+#include "filter.h"
+#include "pid.h"
 
-#define MAINDEBUG
+//#define MAINDEBUG
 
 #ifdef MAINDEBUG
 #define main_debug(fmt, ...)  printf(fmt, ##__VA_ARGS__)
@@ -14,11 +17,15 @@
 #define main_debug(fmt, ...)
 #endif
 
+
 int main(void)
 {
 	initialise_board();
 	s16 signal1 = 0, signal2 = 0, attention1 = 0, attention2 = 0;
-	float distance;
+	float distance,distance_raw;
+	pid_s pid;
+	pid.p=0.35;
+	pid.d=0;
 
 	main_debug("start");
 	while (1)
@@ -45,10 +52,24 @@ int main(void)
 					"signal1:<%d>signal2:<%d>attention1:<%d>attention2:<%d>\n",
 					signal1, signal2, attention1, attention2);
 
+
 		}
 		if(should_task_run(ADC_LOOP))
 		{
-			main_debug("adc:%d \n",get_distance());
+			static u8 i=0;
+			i++;
+			//main_debug("adc:%d \n",get_distance());
+			distance_raw=get_distance();
+			distance=moving_median(1,5,distance_raw);
+
+			if (i>=10)
+			{
+				i=0;
+				pid_cal(&pid,60,distance,1);
+				send_value((u8)(20-pid.output),(u8)(20+pid.output));
+				send_data_to_ano(distance_raw,distance,pid.output);
+			}
+
 		}
 
 

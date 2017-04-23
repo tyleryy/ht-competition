@@ -1,8 +1,8 @@
 /**
  * \file:
  */
-#ifndef __ADC_H
-#define	__ADC_H
+#ifndef __ANO_PROTOCOL_H
+#define	__ANO_PROTOCOL_H
 
 #ifdef __cplusplus
 extern "C"
@@ -10,9 +10,7 @@ extern "C"
 #endif
 
 #include "stm32f10x.h"
-
-void initialise_adc(void);
-float get_distance(void);
+void send_data_to_ano(float raw,float distance,float output);
 
 #ifdef __cplusplus
 }

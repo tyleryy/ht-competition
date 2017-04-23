@@ -42,7 +42,7 @@ s8 should_task_run(task_t task)
 		}
 
 	case ADC_LOOP:
-		if (task_1ms >= 100)
+		if (task_1ms >= 1)
 		{
 			task_1ms = 0;
 			return 1;

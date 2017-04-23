@@ -26,7 +26,9 @@
         <Option name="LTO" value="0"/>
         <Option name="IsNewStartupCode" value="1"/>
         <Option name="Library" value="Not use C Library"/>
-        <LinkedLibraries/>
+        <LinkedLibraries>
+          <Libset dir="" libs="m"/>
+        </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00040000" startValue="0x08000000"/>
           <Memory name="IRAM1" type="ReadWrite" size="0x0000c000" startValue="0x20000000"/>
@@ -84,20 +86,23 @@
     <File name="module/init.c" path="init/init.c" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="module/playvoice.c" path="playvoice/playvoice.c" type="1"/>
+    <File name="module/filter.h" path="filter.h" type="1"/>
     <File name="module" path="" type="2"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f10x_hd.c" path="cmsis_boot/startup/startup_stm32f10x_hd.c" type="1"/>
     <File name="stm_lib/src/misc.c" path="stm_lib/src/misc.c" type="1"/>
+    <File name="module/ano_protocol.h" path="ano_protocol.h" type="1"/>
     <File name="cmsis_boot/stm32f10x.h" path="cmsis_boot/stm32f10x.h" type="1"/>
     <File name="driver/nvic.h" path="nvic/nvic.h" type="1"/>
     <File name="cmsis_boot/stm32f10x_conf.h" path="cmsis_boot/stm32f10x_conf.h" type="1"/>
+    <File name="pid.h" path="pid.h" type="1"/>
     <File name="module/datalink.c" path="datalink/datalink.c" type="1"/>
     <File name="stream_parser/StreamParser.c" path="stream_parser/StreamParser.c" type="1"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_adc.c" path="stm_lib/src/stm32f10x_adc.c" type="1"/>
-    <File name="driver/adc.c" path="adc/adc.c" type="1"/>
     <File name="stm_lib/inc/stm32f10x_dma.h" path="stm_lib/inc/stm32f10x_dma.h" type="1"/>
+    <File name="driver/adc.c" path="adc/adc.c" type="1"/>
     <File name="driver/usart.h" path="usart/usart.h" type="1"/>
     <File name="driver" path="" type="2"/>
     <File name="module/init.h" path="init/init.h" type="1"/>
@@ -105,6 +110,7 @@
     <File name="stm_lib/src/stm32f10x_usart.c" path="stm_lib/src/stm32f10x_usart.c" type="1"/>
     <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
     <File name="driver/nvic.c" path="nvic/nvic.c" type="1"/>
+    <File name="module/filter.c" path="filter.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_gpio.c" path="stm_lib/src/stm32f10x_gpio.c" type="1"/>
     <File name="module/playvoice.h" path="playvoice/playvoice.h" type="1"/>
     <File name="stm_lib/inc/stm32f10x_gpio.h" path="stm_lib/inc/stm32f10x_gpio.h" type="1"/>
@@ -117,9 +123,11 @@
     <File name="cmsis/core_cm3.h" path="cmsis/core_cm3.h" type="1"/>
     <File name="driver/systick.c" path="systick/systick.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_rcc.c" path="stm_lib/src/stm32f10x_rcc.c" type="1"/>
+    <File name="module/ano_protocol.c" path="ano_protocol.c" type="1"/>
     <File name="module/datalink.h" path="datalink/datalink.h" type="1"/>
     <File name="module/schedule.c" path="schedule/schedule.c" type="1"/>
     <File name="stm_lib/src/stm32f10x_dma.c" path="stm_lib/src/stm32f10x_dma.c" type="1"/>
+    <File name="pid.c" path="pid.c" type="1"/>
     <File name="stm_lib/src" path="" type="2"/>
     <File name="module/schedule.h" path="schedule/schedule.h" type="1"/>
     <File name="cmsis" path="" type="2"/>

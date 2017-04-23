@@ -18,6 +18,7 @@ void initialise_board()
 	initialise_uart4(115200); /**<use for telecommute*/
 	initialise_uart5(115200);
 
+
 	initialise_adc();
 	initialise_systick();
 	initialise_think_data();

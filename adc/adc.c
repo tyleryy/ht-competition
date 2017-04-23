@@ -1,5 +1,5 @@
 #include "adc.h"
-
+#include "math.h"
 
 #define    macADC_APBxClock_FUN             RCC_APB2PeriphClockCmd
 #define    macADC_CLK                       RCC_APB2Periph_ADC1
@@ -101,17 +101,15 @@ static void adc_mode_config(void)
 	ADC_SoftwareStartConvCmd(macADCx, ENABLE);
 }
 
-
 void initialise_adc(void)
 {
 	adc_gpio_config();
 	adc_mode_config();
 }
-u8 get_distance(void)
+float get_distance(void)
 {
-
-	return ((-1.51 / 100000000) * adc_converted_value*adc_converted_value*adc_converted_value
-			+ (8.821 /100000) * adc_converted_value*adc_converted_value
+	return ((-1.51 * pow(10, -8)) * pow(adc_converted_value, 3)
+			+ (8.821 * pow(10, -5)) * pow(adc_converted_value, 2)
 			- 0.1816 * adc_converted_value + 166.9);
 
 }

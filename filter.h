@@ -1,8 +1,8 @@
 /**
  * \file:
  */
-#ifndef __ADC_H
-#define	__ADC_H
+#ifndef __FILTER_H
+#define	__FILTER_H
 
 #ifdef __cplusplus
 extern "C"
@@ -11,8 +11,7 @@ extern "C"
 
 #include "stm32f10x.h"
 
-void initialise_adc(void);
-float get_distance(void);
+float moving_median(u8 item,u8 width_num,float in);
 
 #ifdef __cplusplus
 }
