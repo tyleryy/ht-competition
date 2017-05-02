@@ -1,8 +1,8 @@
 /**
  * \file:
  */
-#ifndef __ADC_H
-#define	__ADC_H
+#ifndef __IR_H
+#define	__IR_H
 
 #ifdef __cplusplus
 extern "C"
@@ -10,10 +10,8 @@ extern "C"
 #endif
 
 #include "stm32f10x.h"
-
-void initialise_adc(void);
-float get_distance(void);
-u16 get_adc_raw_data(void);
+void ir_initialise(void);
+u8 who_win(void);
 
 #ifdef __cplusplus
 }

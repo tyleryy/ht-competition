@@ -1,8 +1,8 @@
 /**
  * \file:
  */
-#ifndef __ADC_H
-#define	__ADC_H
+#ifndef __LED_H
+#define	__LED_H
 
 #ifdef __cplusplus
 extern "C"
@@ -11,9 +11,8 @@ extern "C"
 
 #include "stm32f10x.h"
 
-void initialise_adc(void);
-float get_distance(void);
-u16 get_adc_raw_data(void);
+void initialise_led_gpio(void);
+void set_led(s16 signal1,s16 signal2);
 
 #ifdef __cplusplus
 }

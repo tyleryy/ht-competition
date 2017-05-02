@@ -50,13 +50,13 @@ typedef struct _ThinkGearStreamParser
 	unsigned char payloadSum;
 	unsigned char chksum;
 
-	u8 signal;
-	u8 attention;
-	u8 meditation;
+	volatile u8 signal;
+	volatile u8 attention;
+	volatile u8 meditation;
 	u8 EEG_power[30];
-	u8 blink_strength;
-	u8 signalrdy;
-	u8 attentionrdy;
+	volatile u8 blink_strength;
+	volatile u8 signalrdy;
+	volatile u8 attentionrdy;
 
 } ThinkGearStreamParser;
 

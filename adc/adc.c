@@ -113,3 +113,7 @@ float get_distance(void)
 			- 0.1816 * adc_converted_value + 166.9);
 
 }
+u16 get_adc_raw_data(void)
+{
+	return adc_converted_value;
+}

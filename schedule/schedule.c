@@ -2,7 +2,7 @@
 #include "systick/systick.h"
 
 u16 cnt_1ms = 0, cnt_1s = 0;
-u16 task_1s, task_1ms;
+u16 task_1s, task_1ms, task_30s, task_100ms,task_10ms;
 
 void systime_updata(void)
 {
@@ -10,6 +10,8 @@ void systime_updata(void)
 	{
 		cnt_1ms++;
 		task_1ms++;
+		task_100ms++;
+		task_10ms++;
 	}
 	else
 	{
@@ -18,6 +20,7 @@ void systime_updata(void)
 		{
 			cnt_1s++;
 			task_1s++;
+			task_30s++;
 		}
 		else
 		{
@@ -45,6 +48,34 @@ s8 should_task_run(task_t task)
 		if (task_1ms >= 1)
 		{
 			task_1ms = 0;
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	case CHECK_SIGNAL:
+		if (task_30s >= 180)
+		{
+			task_30s = 0;
+			return 1;
+		}
+		else
+			return 0;
+	case SCAN_BTN:
+		if (task_100ms >= 100)
+		{
+			task_100ms = 0;
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	case REFEREE:
+		if (task_10ms >= 1000)
+		{
+			task_10ms = 0;
 			return 1;
 		}
 		else

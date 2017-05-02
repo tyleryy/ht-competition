@@ -17,7 +17,7 @@
  */
 void PrintChar(char c)
 {
-	usart_send_byte(UART5,c);
+	usart_send_byte(USART1,c);
 }
 
 /** Maximum string size allowed (in bytes). */

@@ -1,30 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="5.4.1 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=ht.map -O3 --gc-sections -LD:\Applications\CoIDE\configuration\ProgramData\ht -TD:\Applications\CoIDE\configuration\ProgramData\ht/arm-gcc-link.ld -g -L..\..\.. -lm">
-      <target file="ht.elf" lastModified="15b99f07b60">
-         <source file="..\obj\system_stm32f10x.o" lastModified="15b95b71bf8"/>
-         <source file="..\obj\startup_stm32f10x_hd.o" lastModified="15b95b71c77"/>
-         <source file="..\obj\stm32f10x_gpio.o" lastModified="15b95b71de1"/>
-         <source file="..\obj\main.o" lastModified="15b99f0792d"/>
-         <source file="..\obj\init.o" lastModified="15b99b5987e"/>
-         <source file="..\obj\playvoice.o" lastModified="15b95b72a8f"/>
-         <source file="..\obj\printf.o" lastModified="15b95b73117"/>
-         <source file="..\obj\stm32f10x_rcc.o" lastModified="15b95b732d1"/>
-         <source file="..\obj\StreamParser.o" lastModified="15b95b734c6"/>
-         <source file="..\obj\stm32f10x_adc.o" lastModified="15b95b73658"/>
-         <source file="..\obj\stm32f10x_usart.o" lastModified="15b95b737e8"/>
-         <source file="..\obj\schedule.o" lastModified="15b99b8bf78"/>
-         <source file="..\obj\datalink.o" lastModified="15b95b73946"/>
-         <source file="..\obj\syscalls.o" lastModified="15b95b73b62"/>
-         <source file="..\obj\adc.o" lastModified="15b99b2446e"/>
-         <source file="..\obj\stm32f10x_dma.o" lastModified="15b95b73ec4"/>
-         <source file="..\obj\nvic.o" lastModified="15b95b73f75"/>
-         <source file="..\obj\ano_protocol.o" lastModified="15b99e6998a"/>
-         <source file="..\obj\misc.o" lastModified="15b95b741e3"/>
-         <source file="..\obj\filter.o" lastModified="15b99bfa9c5"/>
-         <source file="..\obj\systick.o" lastModified="15b95b74281"/>
-         <source file="..\obj\pid.o" lastModified="15b99ebf3d4"/>
-         <source file="..\obj\usart.o" lastModified="15b95b74468"/>
+      <target file="ht.elf" lastModified="15bc3311dc5">
+         <source file="..\obj\system_stm32f10x.o" lastModified="15bc31e2bf8"/>
+         <source file="..\obj\led.o" lastModified="15bc32e83ab"/>
+         <source file="..\obj\startup_stm32f10x_hd.o" lastModified="15bc31e2d78"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="15bc31e2ea5"/>
+         <source file="..\obj\main.o" lastModified="15bc3311bc0"/>
+         <source file="..\obj\init.o" lastModified="15bc31e2f6a"/>
+         <source file="..\obj\playvoice.o" lastModified="15bc31e2fd1"/>
+         <source file="..\obj\printf.o" lastModified="15bc31e319f"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="15bc31e3248"/>
+         <source file="..\obj\StreamParser.o" lastModified="15bc31e32dc"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="15bc31e33ba"/>
+         <source file="..\obj\key.o" lastModified="15bc31e3408"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="15bc31e34e7"/>
+         <source file="..\obj\schedule.o" lastModified="15bc31e3535"/>
+         <source file="..\obj\datalink.o" lastModified="15bc31e35ce"/>
+         <source file="..\obj\syscalls.o" lastModified="15bc31e3677"/>
+         <source file="..\obj\adc.o" lastModified="15bc31e36ea"/>
+         <source file="..\obj\stm32f10x_dma.o" lastModified="15bc31e376e"/>
+         <source file="..\obj\nvic.o" lastModified="15bc31e37d1"/>
+         <source file="..\obj\ano_protocol.o" lastModified="15bc31e387b"/>
+         <source file="..\obj\misc.o" lastModified="15bc31e38fe"/>
+         <source file="..\obj\ir.o" lastModified="15bc31e3962"/>
+         <source file="..\obj\filter.o" lastModified="15bc31e39d6"/>
+         <source file="..\obj\systick.o" lastModified="15bc31e3a3b"/>
+         <source file="..\obj\pid.o" lastModified="15bc31e3aaf"/>
+         <source file="..\obj\usart.o" lastModified="15bc31e3bbb"/>
       </target>
    </processor>
 </history>
