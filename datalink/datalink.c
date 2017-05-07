@@ -70,7 +70,7 @@ void send_value(u8 val1, u8 val2)
 	{ 0xaa, 0xaa, 0, 0, 0xaf };
 	data_buff[VAL1] = val1;
 	data_buff[VAL2] = val2;
-	usart_send_array(UART4,data_buff,5);
+	usart_send_array(UART4, data_buff, 5);
 
 }
 

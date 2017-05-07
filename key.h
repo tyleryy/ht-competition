@@ -6,6 +6,7 @@
 
 void Key_GPIO_Config(void);
 u8 is_ready_pressed(void);
-
+u8 is_reset1_pressed(void);
+u8 is_reset2_pressed(void);
 #endif
 

@@ -55,7 +55,7 @@ s8 should_task_run(task_t task)
 			return 0;
 		}
 	case CHECK_SIGNAL:
-		if (task_30s >= 180)
+		if (task_30s >= 8)
 		{
 			task_30s = 0;
 			return 1;
@@ -73,7 +73,7 @@ s8 should_task_run(task_t task)
 			return 0;
 		}
 	case REFEREE:
-		if (task_10ms >= 1000)
+		if (task_10ms >= 10)
 		{
 			task_10ms = 0;
 			return 1;

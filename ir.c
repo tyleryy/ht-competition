@@ -2,8 +2,8 @@
 
 #define    IR_GPIO_CLK     RCC_APB2Periph_GPIOC
 #define    IR_GPIO_PORT    GPIOC
-#define    IR_GPIO_PIN1	   GPIO_Pin_14
-#define    IR_GPIO_PIN2	   GPIO_Pin_15
+#define    IR_GPIO_PIN1	   GPIO_Pin_6
+#define    IR_GPIO_PIN2	   GPIO_Pin_7
 
 void ir_initialise(void)
 {

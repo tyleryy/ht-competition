@@ -12,7 +12,7 @@
 #include "ir.h"
 #include "led.h"
 
-#define MAINDEBUG
+//#define MAINDEBUG
 
 #ifdef MAINDEBUG
 #define main_debug(fmt, ...)  printf(fmt, ##__VA_ARGS__)
@@ -45,7 +45,8 @@ int main(void)
 	s16 signal1 = 0, signal2 = 0, attention1 = 0, attention2 = 0;
 	state_t state = INIT;
 	initialise_board();
-	main_debug("start");
+	main_debug("INIT\r\n");
+	//play_voice(GAME_START);
 	while (1)
 	{
 		if (should_task_run(MAIN_LOOP))
@@ -54,7 +55,11 @@ int main(void)
 			signal2 = get_data(SIGNAL2);
 			attention1 = get_data(ATTENTION1);
 			attention2 = get_data(ATTENTION2);
-			set_led(attention1,attention2);
+			if (signal1 != 0)
+				attention1 = 0;
+			if (signal2 != 0)
+				attention2 = 0;
+			set_led(signal1, signal2);
 
 			if ((signal1 > 0) && (signal2 > 0))
 			{
@@ -69,8 +74,9 @@ int main(void)
 				}
 
 			}
-			if ((state == START) && (attention1 > 0) && (attention2 > 0))
+			if (state == START)
 			{
+
 				send_value(attention1, attention2);
 			}
 			else
@@ -79,8 +85,8 @@ int main(void)
 			}
 
 			main_debug(
-					"signal1:<%d>signal2:<%d>attention1:<%d>attention2:<%d>\n",
-					signal1, signal2, attention1, attention2);
+					"signal1:<%d>signal2:<%d>attention1:<%d>attention2:<%d>state:<%d>\r\n",
+					signal1, signal2, attention1, attention2, state);
 
 		}
 		if (should_task_run(ADC_LOOP))
@@ -88,7 +94,7 @@ int main(void)
 
 			//main_debug("adc:%d \n", get_adc_raw_data());
 		}
-		if (should_task_run(CHECK_SIGNAL))
+		if (should_task_run(CHECK_SIGNAL) && state == READY)
 		{
 			if (signal1 != 0 && signal2 != 0)
 			{
@@ -97,30 +103,47 @@ int main(void)
 		}
 		if (should_task_run(SCAN_BTN))
 		{
-			if ((state = INIT) && (is_ready_pressed()))
+			if ((state == INIT) && (is_ready_pressed()))
 			{
 				state = READY;
 			}
 			if (is_ready_pressed() == 0)
 			{
 				state = INIT;
+				reset_led_win1();
+				reset_led_win2();
+				stop_playing();
 
 			}
+			if (state != START && is_reset1_pressed())
+			{
+				send_value(99, 0);
+			}
+			if (state != START && is_reset2_pressed())
+			{
+				send_value(0, 99);
+			}
 		}
-		if (should_task_run(REFEREE))
+		if (should_task_run(REFEREE) && state == START)
 		{
-			u8 who=0;
-			who=who_win();
+			u8 who = 0;
+			who = who_win();
 			switch (who)
 			{
 			case 1:
 				rfr_debug("1win\r\n");
+				state = OVER;
+				play_voice(WIN_2);
+				set_led_win1();
 				break;
 			case 2:
 				rfr_debug("2win\r\n");
+				state = OVER;
+				play_voice(WIN_1);
+				set_led_win2();
 				break;
 			default:
-				rfr_debug("retval is %d \r\n",who);
+				//rfr_debug("retval is %d \r\n",who);
 				break;
 			}
 

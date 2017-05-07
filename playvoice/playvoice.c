@@ -19,3 +19,11 @@ void play_voice(voice_name voice)
 	usart_send_array(USART1, data_buffer, 9);
 
 }
+void stop_playing(void)
+{
+	u8 data_buffer[] =
+	{ 0x7e, 0x02, 0xa3, 0x7e };
+
+	usart_send_array(USART1, data_buffer, 4);
+
+}
